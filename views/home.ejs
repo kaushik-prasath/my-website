@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+
+        <link rel="stylesheet" href="/bootstrap/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Shadows+Into+Light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+
+        <style>
+            .normal-font {
+                font-family: 'Source Sans Pro', sans-serif;
+                padding: 20px;
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            .author {
+                font-family: 'Dancing Script', cursive;
+                font-size: 80px;
+                transition: border-bottom 0.2s ease-in-out;
+                padding: 10px;
+                text-align: center;
+            }
+
+            @media (max-width: 600px) {
+                .author {
+                    font-size: 35px;
+                }
+            }
+
+            .code-wrapper {
+                max-width: 960px;
+                margin: 10rem auto;
+
+            }
+
+            .quote-1 {
+                font-family: 'Cutive Mono', monospace;
+                /* font-family: 'Cedarville Cursive', cursive; */
+                font-size: 24px;
+            }
+
+
+            .about-kaushik {
+                text-indent: 30pt;
+                font-weight: 300;
+                font-size: 38px;
+                padding: 20px;
+                text-align: justify;
+                color: rgb(105, 105, 105);
+                margin-bottom: 40px;
+                /* font-family: 'Rouge Script', cursive; */
+                font-family: 'Satisfy', cursive;
+            }
+
+            strong {
+                color: #000;
+            }
+
+            @media (max-width: 600px) {
+                .about-kaushik {
+                    font-size: 24px;
+                    text-align: justify;
+                }
+                .quote-1 {
+                    font-size: 18px;
+                    padding: 14px;
+                }
+            }
+
+            .navigation__list {
+                padding: 10px;
+            }
+
+            .navigation__item {
+                padding: 10px;
+            }
+
+            .navigation__link {
+                font-size: 20px;
+            }
+
+            @media (max-width: 600px) {
+                .navigation__link {
+                    font-size: 15px;
+                }
+            }
+
+            h2>a {
+                position: relative;
+                color: rgb(83, 83, 83);
+                text-decoration: none;
+                font-size: 24px;
+            }
+
+            h2>a:hover {
+                color: rgb(0, 0, 0);
+            }
+
+            h2>a:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: rgb(252, 24, 195);
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            h2>a:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+
+            .sub__title {
+                /* font-family: 'Shadows Into Light', cursive; */
+                font-family: 'Bangers', cursive;
+                letter-spacing: 1px;
+                text-decoration: underline;
+            }
+
+            .author-avatar {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-image: url("images/avatar.jpg");
+                background-size: contain;
+                background-position: center;
+                margin: 0 auto;
+            }
+
+            .image-title {
+                font-family: 'Cuprum', sans-serif;
+                text-align: center;
+                color: #575757;
+            }
+
+            .white-bg {
+                background: #f5f5f5;
+            }
+
+            footer {
+                background: #f5f5f5;
+            }
+
+            footer {
+                margin-bottom: -45rem;
+
+            }
+
+            @media (max-width: 600px) {
+                .author-avatar {
+                    width: 150px;
+                    height: 150px;
+                }
+                .image {
+                    height: 200px;
+                }
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <div class="code-wrapper">
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list1">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Gallery</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Works</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Contact</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Get in touch</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="author-avatar">
+
+            </div>
+            <div class="row">
+
+                <h1 class="author">Kaushik prasath</h1>
+                <p class="quote-1">“Website without visitors is like a ship lost in the horizon.” </p>
+            </div>
+            <div id="sd-container">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title_head">About</h1>
+                    <div class="block"></div>
+                    <p class="about-kaushik">
+                        <strong>Kaushik</strong> is trying to grow up, but instead spends most of his time making stuff on the web.
+                        He was raised in the streets of
+                        <strong>Coimbatore</strong> , but currently resides in Bangalore and finds pleasure in being able to walk
+                        to work. When not at
+                        <strong>Geeksynergy</strong> offices creating the internet, he is most likely with his family telling jokes
+                        that are only sometimes funny.Not better, or even important. Just more things I make that don't fit
+                        anywhere else on this website.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about white-bg">
+            <div class="container">
+
+                <div class="row">
+                    <div class="row">
+                        <div class="six columns">
+                            <h3 class="sub__title">
+                                <span class="typcn typcn-cog-outline icon"></span>Make a deadline</h3>
+                            <p class="normal-font">In my experience, there is nothing that provides more motivation, inspiration, and pressure to
+                                complete than a deadline. The more public, the more hardline, the more grave the consequence
+                                for failure — the better!
+                            </p>
+                        </div>
+                        <div class="six columns">
+                            <h3 class="sub__title">
+                                <span class="typcn typcn-lightbulb icon"></span>Skills</h3>
+                            <div class="container-skills">
+                                <div class="html">
+                                    <p class="bar-title">
+                                        HTML / HTML5 & CSS
+                                        <span class="percent align-right">90%</span>
+                                    </p>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-html start"></div>
+                                    </div>
+                                </div>
+                                <div class="javascript">
+                                    <p class="bar-title">
+                                        Javascript(Node.js)
+                                        <span class="percent align-right">60%</span>
+                                    </p>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-javascript start"></div>
+                                    </div>
+                                </div>
+                                <div class="jquery">
+                                    <p class="bar-title">
+                                        JQuery
+                                        <span class="percent align-right">70%</span>
+                                    </p>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-jquery start"></div>
+                                    </div>
+                                </div>
+                                <div class="responsive-design">
+                                    <p class="bar-title">
+                                        Responsive Design
+                                        <span class="percent align-right">90%</span>
+                                    </p>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-responsive start"></div>
+                                    </div>
+                                </div>
+                                <div class="photoshop">
+                                    <p class="bar-title">
+                                        Photoshop
+                                        <span class="percent align-right">20%</span>
+                                    </p>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-photoshop start"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="team">
+            <div class="container">
+
+                <div class="row">
+                    <h1 class="title_head">Gallery</h1>
+                    <div class="block"></div>
+
+                    <div class="grid">
+                        <div class="card span-1 c-1" style="background-image: url(/images/insta_1.jpg);"></div>
+                        <div class="card span-2 c-3" style="background-image: url(/images/insta_2.jpg);"></div>
+                        <div class="card span-3 c-4" style="background-image: url(/images/insta_3.jpg);"></div>
+                        <div class="card span-1 c-3" style="background-image: url(/images/insta_4.jpg);"></div>
+                        <div class="card span-2 c-5" style="background-image: url(/images/insta_5.jpg);"></div>
+                        <div class="card span-1 c-2" style="background-image: url(/images/insta_0.jpg);"></div>
+                        <div class="card span-3 c-3" style="background-image: url(/images/insta_6.jpg);"></div>
+                        <div class="card span-1 c-3" style="background-image: url(/images/insta_7.jpg);"></div>
+                        <div class="card span-1 c-5" style="background-image: url(/images/insta_8.jpg);"></div>
+                        <div class="card span-2 c-5" style="background-image: url(/images/insta_9.jpg);"></div>
+                        <div class="card span-1 c-2" style="background-image: url(/images/insta_10.jpg);"></div>
+                        <div class="card span-1 c-3" style="background-image: url(/images/insta_11.jpg);"></div>
+                        <div class="card span-1 c-3" style="background-image: url(/images/insta_12.jpg);"></div>
+
+                        <div class="card span-2 c-2" style="background-image: url(/images/avatar.jpg);"></div>
+                        <div class="card span-2 c-5" style="background-image: url(/images/insta_1.jpg);"></div>
+                        <div class="card span-1 c-2" style="background-image: url(/images/insta_3.jpg);"></div>
+                        <div class="card span-1 c-2" style="background-image: url(/images/insta_5.jpg);"></div>
+                        <div class="card span-1 c-4" style="background-image: url(/images/insta_7.jpg);"></div>
+
+
+                    </div>
+
+        </section>
+
+
+
+        <section id="skills">
+            <div class="container">
+                <h1>Work</h1>
+                <div class="block"></div>
+                <div class="row">
+                    <div class="three columns">
+                        <img src="https://blogsimages.adobe.com/digitaleurope/files/2017/07/Image-How-Travel-Brands-Can-Use-and-Safeguard-Customer-Data-e1496020804925.png"
+                            class="image" alt="Work One" />
+                        <h5 class="image-title">DigiTour</h5>
+                    </div>
+                    <div class="three columns">
+                        <img src="https://cdn-images-1.medium.com/max/700/1*mLE5ZxhtATxrwh20SL2Tlg.png" class="image" alt="Work Two" />
+                        <h5 class="image-title">Chat App</h5>
+
+                    </div>
+                    <div class="three columns">
+                        <img src="https://d4oz43evw1m6y.cloudfront.net/static/images/2x/web-app-leaderboard-freebie-q3.jpg" class="image" alt="Work Three"
+                        />
+                        <h5 class="image-title">Leaderboard</h5>
+
+                    </div>
+                    <div class="three columns">
+                        <img src="https://cdn-images-1.medium.com/max/1600/0*EV6OOsdHgzYD_8UN.gif" class="image" alt="Work Four" />
+                        <h5 class="image-title">Todo App</h5>
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="three columns">
+                        <img src="https://i.pinimg.com/736x/6b/0a/be/6b0abed97bc31422c0e808c3ea733d43--ui-inspiration-app-design.jpg" class="image"
+                            alt="Work Five" />
+                        <h5 class="image-title">Weather App</h5>
+
+                    </div>
+                    <div class="three columns">
+                        <img src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/how-to-setup-website.jpg" class="image" alt="Work Six" />
+                        <h5 class="image-title">Responsive App</h5>
+                    </div>
+                    <div class="three columns">
+                        <img src="https://i.pinimg.com/originals/a7/0c/af/a70caf61d49cd2f7200b1edeae107bd2.png" class="image" alt="Work Seven" />
+                        <h5 class="image-title">Expensify</h5>
+
+                    </div>
+                    <div class="three columns">
+                        <img src="/images/indecision.png" class="image" alt="Work Eight" />
+                        <h5 class="image-title">Indecision</h5>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Contact</h1>
+                <div class="block"></div>
+                <form>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="exampleRecipientInput">Name</label>
+                            <input class="u-full-width" type="text">
+                        </div>
+                        <div class="six columns">
+                            <label for="exampleEmailInput">Email</label>
+                            <input class="u-full-width" type="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="exampleMessage">Message</label>
+                        <textarea class="u-full-width"></textarea>
+                        <input class="button-primary" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="code-wrapper">
+                    <h1 class="title_head">Get in touch</h1>
+                    <div class="block"></div>
+                    <div class="social-media-links">
+                        <ul>
+                            <li>
+                                <!-- twitter -->
+                                <a href="#">
+                                    <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                                        />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M9.5 27.1c11.2 0 17.4-9.3 17.4-17.4 0-0.3 0-0.5 0-0.8 1.2-0.9 2.2-1.9 3-3.2 -1.1 0.5-2.3 0.8-3.5 1 1.3-0.8 2.2-2 2.7-3.4 -1.2 0.7-2.5 1.2-3.9 1.5 -1.1-1.2-2.7-1.9-4.5-1.9 -3.4 0-6.1 2.7-6.1 6.1 0 0.5 0.1 0.9 0.2 1.4C9.7 10.1 5.2 7.7 2.2 4 1.7 4.9 1.4 6 1.4 7.1c0 2.1 1.1 4 2.7 5.1 -1 0-1.9-0.3-2.8-0.8 0 0 0 0.1 0 0.1 0 3 2.1 5.4 4.9 6 -0.5 0.1-1.1 0.2-1.6 0.2 -0.4 0-0.8 0-1.1-0.1 0.8 2.4 3 4.2 5.7 4.2 -2.1 1.6-4.7 2.6-7.6 2.6 -0.5 0-1 0-1.5-0.1C2.8 26.1 6 27.1 9.5 27.1"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- facebook -->
+                                <a href="#">
+                                    <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                                        />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M28.3 0.1H1.7c-0.9 0-1.6 0.7-1.6 1.6v26.5c0 0.9 0.7 1.6 1.6 1.6H16V18.4h-3.9v-4.5H16v-3.3c0-3.9 2.4-5.9 5.8-5.9 1.6 0 3.1 0.1 3.5 0.2v4l-2.4 0c-1.9 0-2.2 0.9-2.2 2.2v2.9h4.5l-0.6 4.5h-3.9v11.5h7.6c0.9 0 1.6-0.7 1.6-1.6V1.7C29.9 0.8 29.2 0.1 28.3 0.1z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- youtube -->
+                                <a href="#">
+                                    <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                                        />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M29.7 9c0 0-0.3-2.1-1.2-3 -1.1-1.2-2.4-1.2-3-1.3C21.3 4.5 15 4.5 15 4.5h0c0 0-6.3 0-10.5 0.3C3.9 4.8 2.6 4.8 1.5 6 0.6 6.9 0.3 9 0.3 9S0 11.4 0 13.9v2.3C0 18.6 0.3 21 0.3 21s0.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3C7.2 25.5 15 25.6 15 25.6s6.3 0 10.5-0.3c0.6-0.1 1.9-0.1 3-1.3 0.9-0.9 1.2-3 1.2-3s0.3-2.4 0.3-4.9v-2.3C30 11.4 29.7 9 29.7 9zM11.9 18.9l0-8.4 8.1 4.2L11.9 18.9z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- instagram -->
+                                <a href="#">
+                                    <svg class="glow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                                        />
+                                        <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                                        />
+                                        <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path class="st0" d="M15 2.8c4 0 4.4 0 6 0.1 1.4 0.1 2.2 0.3 2.8 0.5 0.7 0.3 1.2 0.6 1.7 1.1 0.5 0.5 0.8 1 1.1 1.7C26.8 6.8 27 7.6 27.1 9c0.1 1.6 0.1 2 0.1 6s0 4.4-0.1 6c-0.1 1.4-0.3 2.2-0.5 2.8 -0.3 0.7-0.6 1.2-1.1 1.7 -0.5 0.5-1 0.8-1.7 1.1 -0.5 0.2-1.3 0.4-2.8 0.5 -1.6 0.1-2 0.1-6 0.1s-4.4 0-6-0.1c-1.4-0.1-2.2-0.3-2.8-0.5 -0.7-0.3-1.2-0.6-1.7-1.1 -0.5-0.5-0.8-1-1.1-1.7C3.2 23.2 3 22.4 2.9 21c-0.1-1.6-0.1-2-0.1-6s0-4.4 0.1-6C3 7.6 3.2 6.8 3.4 6.2 3.7 5.5 4 5.1 4.5 4.5c0.5-0.5 1-0.8 1.7-1.1C6.8 3.2 7.6 3 9 2.9 10.6 2.8 11 2.8 15 2.8M15 0.2c-4 0-4.5 0-6.1 0.1C7.3 0.3 6.2 0.6 5.3 0.9c-1 0.4-1.8 0.9-2.6 1.7C1.8 3.5 1.3 4.3 0.9 5.3c-0.4 0.9-0.6 2-0.7 3.6C0.2 10.5 0.1 11 0.1 15c0 4 0 4.5 0.1 6.1 0.1 1.6 0.3 2.7 0.7 3.6 0.4 1 0.9 1.8 1.7 2.6 0.8 0.8 1.7 1.3 2.6 1.7 0.9 0.4 2 0.6 3.6 0.7 1.6 0.1 2.1 0.1 6.1 0.1s4.5 0 6.1-0.1c1.6-0.1 2.7-0.3 3.6-0.7 1-0.4 1.8-0.9 2.6-1.7 0.8-0.8 1.3-1.7 1.7-2.6 0.4-0.9 0.6-2 0.7-3.6 0.1-1.6 0.1-2.1 0.1-6.1s0-4.5-0.1-6.1c-0.1-1.6-0.3-2.7-0.7-3.6 -0.4-1-0.9-1.8-1.7-2.6 -0.8-0.8-1.7-1.3-2.6-1.7 -0.9-0.4-2-0.6-3.6-0.7C19.5 0.2 19 0.2 15 0.2L15 0.2z"
+                                        />
+                                        <path class="st0" d="M15 7.4c-4.2 0-7.6 3.4-7.6 7.6s3.4 7.6 7.6 7.6 7.6-3.4 7.6-7.6S19.2 7.4 15 7.4zM15 20c-2.7 0-5-2.2-5-5s2.2-5 5-5c2.7 0 5 2.2 5 5S17.7 20 15 20z"
+                                        />
+                                        <circle class="st0" cx="22.9" cy="7.1" r="1.8" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <% include partials/import-js %>
+            <script src="/bootstrap/js/main.js"></script>
+
+</body>
+
+</html>
