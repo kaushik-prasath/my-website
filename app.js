@@ -8,10 +8,13 @@ var multer = require('multer');
 var session = require('express-session');
 
 var user = require('./routes/user');
+var admin = require('./routes/admin');
 
 var app = express();
 
 const mongoose = require('mongoose')
+const dbConfig = require('./config/connection')
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -19,9 +22,11 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-mongoose.set('debug', true);
+
+mongoose.set('debug', false);
 mongoose.Promise = require('bluebird');
 mongoose.Promise = global.Promise;
+mongoose.connect(dbConfig.dbUrl);
 let db = mongoose.connection;
 db.once('open', function() {});
 db.on('error', function(err) {
@@ -53,6 +58,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/', user);
+app.use('/kaushik', admin)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/head %>
+    <% include ../partials/import-css %>
+      <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+      <script src="/service/js/firebase-config.js"></script>
+      <script src="https://apis.google.com/js/api.js"></script>
+
+</head>
+
+<body>
+
+  <% include ../partials/import-js %>
+
+    <script>
+      $(document).ready(function() {
+        firebase.auth().signOut();
+        window.location.href = "/kaushik/login";
+      });
+    </script>
+</body>
+
+</html>

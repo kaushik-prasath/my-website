@@ -36,27 +36,27 @@ var ui = new firebaseui
  * @param {!firebase.User} user
  */
 var handleSignedInUser = function(user) {
-  // document.getElementById('user-signed-in').style.display = 'block';
-  // document.getElementById('user-signed-out').style.display = 'none';
-  // document.getElementById('name').textContent = user.displayName;
-  // document.getElementById('email').textContent = user.email;
-  // document.getElementById('phone').textContent = user.phoneNumber; if
-  // (user.photoURL){   document.getElementById('photo').src = user.photoURL;
-  // document.getElementById('photo').style.display = 'block'; } else {
-  // document.getElementById('photo').style.display = 'none'; }
+
   let phoneNumber = user.phoneNumber;
   let uid = user.uid;
-  var uri = "/kaushik/login";
+  var uri = "/admin/login";
   $.post(uri, {
     "mobileNo": phoneNumber,
-    "mobileId": uid
+    "mobileId": uid,
+    "email": null,
+    "googleId": 'undefined'
   }, function(data, status) {
     console.log(data);
-    if (data.code === 1) {
-      window.location.href = '/kaushik/dashboard';
-    } else if (data.code === 4) {
-      alert('Sorry you are not the admin!Please contact Kaushik');
-      window.location.href = '/';
+    if (data.code == 4) {
+      window.location.href = `/admin/profile`;
+    } else if (data.code == 6) {
+      toastr.info('Server error, contact admin for more information');
+    } else if (data.code == 1) {
+      window.location.href = "/admin/user";
+    } else if (data.code == 3) {
+      toastr.info('You are already logged in on someother device.Make sure to logout and try again.');
+    } else if (data.code == 5) {
+      toastr.info('Permission is denied.Please contact the admin.')
     }
   });
 
@@ -120,3 +120,15 @@ var initApp = function() {
 };
 
 window.addEventListener('load', initApp);
+
+toastr.options = {
+  timeOut: 0,
+  positionClass: "toast-top-center",
+  newestOnTop: false,
+  showEasing: 'swing',
+  showMethod: 'slideDown',
+  preventDuplicates: true,
+  progressBar: false,
+  rtl: true,
+  closeButton: true
+};

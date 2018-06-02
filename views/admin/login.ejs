@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../adminPartials/head %>
+    <% include ../adminPartials/import-css %>
+      <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+      <script src="/service/js/firebase-config.js"></script>
+      <script src="https://apis.google.com/js/api.js"></script>
+      <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+      <link type="text/css" rel="stylesheet" href="/service/css/firebaseui.css" />
+      <link type="text/css" rel="stylesheet" href="/service/css/firebase-otp.min.css" />
+      <title>Admin Login</title>
+
+      <style>
+        .container {
+          max-width: 640px;
+          font-size: 16px;
+        }
+
+        .btn {
+          font-size: 16px;
+        }
+
+        .author-head>h1 {
+          font-family: 'Dancing Script', cursive;
+          font-size: 35px;
+        }
+
+        .firebaseui-idp-text.firebaseui-idp-text-long {
+          display: none;
+        }
+
+        .firebaseui-idp-icon {
+          display: none;
+        }
+
+        .firebaseui-idp-phone,
+        .firebaseui-idp-phone:hover,
+        .mdl-button.firebaseui-idp-phone:active,
+        .mdl-button.firebaseui-idp-phone:focus {
+          padding: 20px;
+        }
+      </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="author-head mt-5">
+      <h1 class="text-center">Kaushik prasath</h1>
+    </div>
+    <!-- <form class="mt-5">
+
+      <label for="mobileNo" class="grey-text">Mobile Number</label>
+      <input type="tel" id="MobileNo" class="form-control">
+
+      <br>
+
+      <div class="text-center mt-4">
+        <button class="btn btn-indigo btn-block" type="submit">Get OTP</button>
+      </div>
+    </form> -->
+    <p class="h2 mt-5 text-center">Click below to get OTP</p>
+    <div id="firebaseui-container"></div>
+  </div>
+
+  <script src="/service/js/firebase-otp.js"></script>
+
+  <% include ../adminPartials/import-js %>
+
+</body>
+
+</html>
