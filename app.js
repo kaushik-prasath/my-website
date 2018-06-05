@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var session = require('express-session');
+var compression = require('compression');
+var helmet = require('helmet');
 
 var user = require('./routes/user');
 var admin = require('./routes/admin');
@@ -33,6 +35,8 @@ db.on('error', function(err) {
   console.error(err);
 });
 
+app.use(compression());
+app.use(helmet());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
