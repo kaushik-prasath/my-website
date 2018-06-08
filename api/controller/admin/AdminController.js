@@ -17,13 +17,10 @@ module.exports = {
       if (!(mobileNo == 'undefined' || mobileNo == 0)) {
         queryObj['mobileNo'] = mobileNo;
       }
-      if (!(mobileId == 'undefined' || mobileId == '')) {
-        queryObj['mobileId'] = mobileId;
-      }
 
       result = await Admin.find(queryObj);
       if (!(result.length == 0)) {
-        if (result[0].access == 'admin' && result[0].mobileNo == mobileNo && result[0].mobileId == mobileId) {
+        if (result[0].access == 'admin' && result[0].mobileNo == mobileNo) {
           resCode = 1;
         } else {
           resCode = 4;
