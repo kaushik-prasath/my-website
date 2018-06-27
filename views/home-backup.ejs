@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/head %>
+
+</head>
+
+<body style="margin:0px; padding:0;">
+
+
+  <div class="code-wrapper links">
+
+    <% include partials/nav %>
+
+    <!-- <div class="row" style="text-align:center;padding-bottom:30px;">
+      <a href="#about-me" class="navigation__link">About</a>
+      <a href="#my-gallery" class="navigation__link">Gallery</a>
+      <a href="#my-works" class="navigation__link">Works</a>
+      <a href="#contact-me" class="navigation__link">Contact</a>
+      <a href="#get-in-touch" class="navigation__link">Get in touch</a>
+    </div> -->
+
+      <div class="row" style="margin-top:50px;">
+        <div class="author-avatar">
+
+        </div>
+        <div class="row">
+
+          <h1 class="author">Kaushik prasath</h1>
+          <p class="quote-1">“Website without visitors is like a ship lost in the horizon.” </p>
+        </div>
+        <div id="sd-container">
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+      <% include partials/about %>
+
+        <% include partials/gallery %>
+
+          <% include partials/skills %>
+
+            <% include partials/contact %>
+
+              <% include partials/footer %>
+
+
+
+
+
+                <% include partials/import-js %>
+                  <script src="/bootstrap/js/main.js"></script>
+
+
+                  <script type="text/javascript">
+//Smooth scrolling
+                  $( '.links a' ).on( 'click', function(e){
+
+                    // Define variable of the clicked »a« element (»this«) and get its href value.
+                    var href = $(this).attr( 'href' );
+
+                    // Run a scroll animation to the position of the element which has the same id like the href value.
+                    $( 'html, body' ).animate({
+                  		scrollTop: $( href ).offset().top
+                    }, '200' );
+
+                    // Prevent the browser from showing the attribute name of the clicked link in the address bar
+                    e.preventDefault();
+
+                  });
+                    // toastr.options = {
+                    //   timeOut: 0,
+                    //   positionClass: "toast-top-center",
+                    //   newestOnTop: false,
+                    //   showEasing: 'swing',
+                    //   showMethod: 'slideDown',
+                    //   preventDuplicates: true,
+                    //   progressBar: true,
+                    //   rtl: true,
+                    //   closeButton: true
+                    //
+                    // };
+
+                    // function handleSubmit() {
+                    //   let name = $('#name').val();
+                    //   let email = $('#email').val();
+                    //   let message = $('#message').val();
+                    //
+                    //   $('#name').val('');
+                    //   $('#email').val('');
+                    //   $('#message').val('');
+                    //
+                    //   if ((name == 'undefined' || name == null || name == "")) {
+                    //     return toastr.info('Please enter your name');
+                    //   }
+                    //   if ((email == 'undefined' || email == null || email == "")) {
+                    //     return toastr.info('Please enter your email');
+                    //   }
+                    //   if ((message == 'undefined' || message == null || message == "")) {
+                    //     return toastr.info('Enter your message');
+                    //   }
+                    //
+                    //   let uri = '/contact';
+                    //   $.post(uri, {
+                    //     "name": name,
+                    //     "email": email,
+                    //     "message": message
+                    //   }, function(data) {
+                    //     console.log(data);
+                    //     if (data.code === 1) {
+                    //       toastr.info(`Thank you ${data.user.name} for your message!`);
+                    //     }
+                    //   });
+                    // }
+                  </script>
+
+</body>
+
+</html>

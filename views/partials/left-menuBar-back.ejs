@@ -1,0 +1,119 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel" style="margin-bottom:10px;height:80px">
+      <div class="pull-left image">
+        <img src="/images/avatar.jpg" class="img-circle" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p id="userName-left1">
+          <%= user.userName %>
+        </p>
+        <!-- Status -->
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      </div>
+    </div>
+
+    <div class="input-group" style="height:auto">
+    </div>
+    <!-- Sidebar Menu class="active"-->
+    <ul class="sidebar-menu" data-widget="tree">
+      <% for(var i=0; i< permission.permission.length; i++) {%>
+
+        <% if(permission.permission[i].label == 'dashboard' ){ %>
+          <% if(!permission.permission[i].enable){ %>
+            <li class="dashboard disabled"><a href=""><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+            <% } else{ %>
+              <li class="dashboard"><a href="/admin/dashboard"><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+              <% } %>
+                <% } %>
+
+                  <% if(permission.permission[i].label == 'users' ){ %>
+                    <% if(!permission.permission[i].enable){ %>
+                      <li class="users disabled"><a href=""><i class="fa fa-user" aria-hidden="true"></i> <span>Users</span></a></li>
+                      <% } else{ %>
+                        <li class="users"><a href="/admin/user"><i class="fa fa-user" aria-hidden="true"></i> <span>Users</span></a></li>
+                        <% } %>
+                          <% } %>
+
+                            <% if(permission.permission[i].label == 'places' ){ %>
+                              <% if(!permission.permission[i].enable){ %>
+                                <li class="places disabled"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Places</span></a></li>
+                                <% } else{ %>
+                                  <li class="places"><a href="admin/place"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Places</span></a></li>
+                                  <% } %>
+                                    <% } %>
+
+                                      <% if(permission.permission[i].label == 'monuments' ){ %>
+                                        <% if(!permission.permission[i].enable){ %>
+                                          <li class="monuments disabled"><a href=""><i class="glyphicon glyphicon-saved" aria-hidden="true"></i> <span>Monuments</span></a></li>
+                                          <% } else{ %>
+                                            <li class="monuments"><a href="/admin/monument"><i class="glyphicon glyphicon-saved" aria-hidden="true"></i> <span>Monuments</span></a></li>
+                                            <% } %>
+                                              <% } %>
+
+                                                <% if(permission.permission[i].label == 'subscriptions' ){ %>
+                                                  <% if(!permission.permission[i].enable){ %>
+                                                    <li class="subscriptions disabled">
+                                                      <a href=""><i class="fa fa-file-text jumbo"></i> <span>Subscriptions</span></a>
+                                                    </li>
+                                                    <% } else{ %>
+                                                      <li class="subscriptions">
+                                                        <a href="/admin/subscription"><i class="fa fa-file-text jumbo"></i> <span>Subscriptions</span></a>
+
+                                                      </li>
+                                                      <% } %>
+                                                        <% } %>
+
+                                                          <% if(permission.permission[i].label == 'roles' ){ %>
+                                                            <% if(!permission.permission[i].enable){ %>
+                                                              <li class="roles disabled">
+                                                                <a href=""><i class="fa fa-lock" aria-hidden="true"></i> <span>Roles</span></a>
+                                                              </li>
+                                                              <% } else{ %>
+                                                                <li class="roles">
+                                                                  <a href="/admin/role"><i class="fa fa-lock" aria-hidden="true"></i> <span>Roles</span></a>
+
+                                                                </li>
+                                                                <% } %>
+                                                                  <% } %>
+
+                                                                    <% if(permission.permission[i].label == 'admin' ){ %>
+                                                                      <% if(!permission.permission[i].enable){ %>
+                                                                        <li class="admin disabled">
+                                                                          <a href=""><i class="fa fa-percent" aria-hidden="true"></i> <span>Admin</span></a>
+                                                                        </li>
+                                                                        <% } else{ %>
+                                                                          <li class="admin">
+                                                                            <a href="/admin/admin"><i class="fa fa-percent" aria-hidden="true"></i> <span>Admin</span></a>
+
+                                                                          </li>
+                                                                          <% } %>
+                                                                            <% } %>
+
+                                                                              <% } %>
+
+
+
+                                                                                <!--    <li class="treeview">
+<a href="/role"><i class="fa fa-lock" aria-hidden="true"></i> <span>Roles</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Call</a></li>
+                  <li><a href="#"><i class="fa fa-commenting-o"></i>SMS</a></li>
+                  <li><a href="#"><i class="fa fa-envelope-o"></i>Email</a></li>
+                </ul>
+              </li>
+    </ul>
+    <!-- /.sidebar-menu -->
+    </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>

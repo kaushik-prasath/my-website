@@ -2,96 +2,428 @@
 <html lang="en">
 
 <head>
-  <% include partials/head %>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <title>Kaushik Prasath</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive css -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
 
-
-  <div class="code-wrapper">
-
-    <% include partials/nav %>
-
-      <div class="row">
-        <div class="author-avatar">
-
-        </div>
+    <!-- start section navbar -->
+    <nav id="main-nav">
         <div class="row">
+            <div class="container">
 
-          <h1 class="author">Kaushik prasath</h1>
-          <p class="quote-1">“Website without visitors is like a ship lost in the horizon.” </p>
+                <div class="logo">
+                    <a href="index.html"><img  src="images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+                <ul class="nav-menu list-unstyled">
+                    <li><a href="#header" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+                    <li><a href="#journal" class="smoothScroll">Gallery</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                </ul>
+
+            </div>
         </div>
-        <div id="sd-container">
-          <div class="arrow"></div>
-          <div class="arrow"></div>
+    </nav>
+    <!-- End section navbar -->
+
+
+    <!-- start section header -->
+    <div id="header" class="home">
+
+        <div class="container">
+            <div class="header-content">
+                <h1>I'm <span class="typed"></span></h1>
+                <p>Designer & Developer</p>
+
+                <ul class="list-unstyled list-social">
+                    <li><a href="https://facebook.com/kaushikavina"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/kaushiprasath"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/kaushik_prasath/"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="https://github.com/kaushik-prasath/"><i class="ion-social-github"></i></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-      <% include partials/about %>
-
-        <% include partials/gallery %>
-
-          <% include partials/skills %>
-
-            <% include partials/contact %>
-
-              <% include partials/footer %>
+    </div>
+    <!-- End section header -->
 
 
+    <!-- start section about us -->
+    <div id="about" class="paddsection">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-lg-4 ">
+                    <div class="div-img-bg">
+                        <div class="about-img">
+                            <img src="images/insta_10.jpg" class="img-responsive" alt="me">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="about-descr">
+
+                        <p class="p-heading">Kaushik is trying to grow up, but instead spends most of his time making stuff on the web. He was raised in the streets of Coimbatore , but currently resides in Bangalore and finds pleasure in being able to walk to work. When not
+                            at Geeksynergy offices creating the internet, he is most likely with his family telling jokes that are only sometimes funny.Not better, or even important. Just more things I make that don't fit anywhere else on this website.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section about us -->
+
+
+    <!-- start section services -->
+    <div id="services">
+        <div class="container">
+
+            <div class="services-carousel owl-theme">
+
+                <div class="services-block">
+
+                    <i class="ion-laptop"></i>
+                    <span>SURFING</span>
+                    <p class="separator">Like to spend some time watching YouTube videos on the Internet.</p>
+
+                </div>
+
+                <div class="services-block">
+
+                    <i class="ion-ios-baseball"></i>
+                    <span>CRICKET</span>
+                    <p class="separator">Always wanted to become a professional cricketer.</p>
+
+                </div>
+
+                <div class="services-block">
+
+                    <i class="ion-ios-color-wand-outline"></i>
+                    <span>WEB DESIGN</span>
+                    <p class="separator">Design is the journey of discovery</p>
+
+                </div>
+
+                <div class="services-block">
+
+                    <i class="ion-ios-musical-notes"></i>
+                    <span>MUSIC</span>
+                    <p class="separator">Without music life would be a mistake</p>
+
+                </div>
+
+                <div class="services-block">
+
+                    <i class="ion-aperture"></i>
+                    <span>PHOTOGRAPHY</span>
+                    <p class="separator">Don't shoot what it looks like.Shoot what it feels like.</p>
+
+                </div>
+
+                <div class="services-block">
+
+                    <i class="ion-pizza"></i>
+                    <span>FOOD</span>
+                    <p class="separator">I'm sorry for what I said when I was hungry</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end section services -->
+
+
+    <!-- start section portfolio -->
+    <div id="portfolio" class="text-center paddsection">
+
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>My Portfolio</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="portfolio-list">
+
+                        <ul class="nav list-unstyled" id="portfolio-flters">
+                            <li class="filter filter-active" data-filter=".all">All</li>
+                            <li class="filter" data-filter=".branding">Designing</li>
+                            <li class="filter" data-filter=".mockups">Mockups</li>
+                            <li class="filter" data-filter=".uikits">ui kits</li>
+                            <li class="filter" data-filter=".webdesign">Professional</li>
+                            <li class="filter" data-filter=".photography">Hacks</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="portfolio-container">
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+                            <a class="popup-img" href="images/portfolio/chat.jpg">
+                <img src="images/portfolio/chat.jpg" alt="img">
+              </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+                            <a class="popup-img" href="images/portfolio/score.jpg">
+                <img src="images/portfolio/score.jpg"  alt="img">
+              </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+                            <a class="popup-img" href="images/portfolio/taj.jpg">
+                <img src="images/portfolio/taj.jpg" alt="img">
+              </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+                            <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/4.jpg" alt="img">
+              </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+                            <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/5.jpg" alt="img">
+              </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+                            <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/6.jpg" alt="img">
+              </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End section portfolio -->
+
+
+    <!-- start section journal -->
+    <div id="journal" class="text-left paddsection">
+
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>journal</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="journal-block">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+
+                            <a href="blog-single.html"><img src="images/insta_1.jpg" class="img-responsive" alt="img"></a>
+
+                            <div class="journal-txt">
+
+                                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+
+                            <a href="blog-single.html"><img src="images/insta_6.jpg" class="img-responsive" alt="img"></a>
+
+                            <div class="journal-txt">
+
+                                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="journal-info">
+
+                            <a href="blog-single.html"><img src="images/insta_8.jpg" class="img-responsive" alt="img"></a>
+
+                            <div class="journal-txt">
+
+                                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End section journal -->
+
+
+    <!-- start sectoion contact -->
+    <div id="contact" class="paddsection">
+        <div class="container">
+            <div class="contact-block1">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="contact-contact">
+
+                            <h2 class="mb-30">GET IN TOUCH</h2>
 
 
 
-                <% include partials/import-js %>
-                  <script src="/bootstrap/js/main.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="row">
+
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <div id="errormessage"></div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group contact-block1">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                        <div class="validation"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start sectoion contact -->
 
 
-                  <script type="text/javascript">
-                    toastr.options = {
-                      timeOut: 0,
-                      positionClass: "toast-top-center",
-                      newestOnTop: false,
-                      showEasing: 'swing',
-                      showMethod: 'slideDown',
-                      preventDuplicates: true,
-                      progressBar: true,
-                      rtl: true,
-                      closeButton: true
+    <!-- start section footer -->
+    <div id="footer" class="text-center">
+        <div class="container">
+            <div class="socials-media text-center">
 
-                    };
+                <ul class="list-unstyled">
+                    <li><a href="https://facebook.com/kaushikavina"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/kaushiprasath"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/kaushik_prasath/"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="https://plus.google.com/112398047854942341040"><i class="ion-social-googleplus"></i></a></li>
+                </ul>
 
-                    function handleSubmit() {
-                      let name = $('#name').val();
-                      let email = $('#email').val();
-                      let message = $('#message').val();
+            </div>
 
-                      $('#name').val('');
-                      $('#email').val('');
-                      $('#message').val('');
+            <p>&copy; Copyrights 2018 . All rights reserved.</p>
 
-                      if ((name == 'undefined' || name == null || name == "")) {
-                        return alert('Please enter your name');
-                      }
-                      if ((email == 'undefined' || email == null || email == "")) {
-                        return alert('Please enter your email');
-                      }
-                      if ((message == 'undefined' || message == null || message == "")) {
-                        return alert('Enter your message');
-                      }
+            <div class="credits">
+                <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+                Designed by <a href="">Kaushik Prasath</a>
+            </div>
 
-                      let uri = '/contact';
-                      $.post(uri, {
-                        "name": name,
-                        "email": email,
-                        "message": message
-                      }, function(data) {
-                        console.log(data);
-                        if (data.code === 1) {
-                          alert(`Thank you ${data.user.name} for your message!`);
-                        }
-                      });
-                    }
-                  </script>
+        </div>
+    </div>
+    <!-- End section footer -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
 
 </body>
 
